@@ -1,0 +1,38 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>productive - Tag - Huka&#39;s Garden</title>
+        <link>https://hukacode.github.io/tags/productive/</link>
+        <description>productive - Tag - Huka&#39;s Garden</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mr.kharhums@gmail.com (Huka)</managingEditor>
+            <webMaster>mr.kharhums@gmail.com (Huka)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 27 Apr 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://hukacode.github.io/tags/productive/" rel="self" type="application/rss+xml" /><item>
+    <title>PARA method</title>
+    <link>https://hukacode.github.io/note/20210427202002/</link>
+    <pubDate>Tue, 27 Apr 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://hukacode.github.io/note/20210427202002/</guid>
+    <description><![CDATA[Định nghĩa  Project là một list các task mà liên quan tới một goal, có deadline  Ví dụ như là viết một bài viết, ghi chú,..   Area of responsibility là một lĩnh vực các hoạt động cần được duy trì theo thời gian  Ví dụ như là Sức khỏe, Tài chính, Sở thích, Du lịch, Học tập,..   Resource Archive là nơi chứa những project đã hoàn thành hoặc tạm hoãn, area mà không muốn duy trì nữa và resource mà không còn quan tâm nữa.]]></description>
+</item><item>
+    <title>Phương pháp Getting Things Done (GTD)</title>
+    <link>https://hukacode.github.io/note/getting-things-done/</link>
+    <pubDate>Mon, 12 Apr 2021 20:53:02 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://hukacode.github.io/note/getting-things-done/</guid>
+    <description><![CDATA[What GTD là hệ thống quản lí công việc phổ biến được tạo bởi David Allen. Phương pháp này dựa trên một sự thật đơn giản là: càng nhiều thông tin nhảy quanh trong đầu bạn thì càng khó để quyết định cần chú ý vào cái gì.
+Kết quả là bạn tiêu tốn nhiều thời gian để nghĩ về công việc đó hơn là hoàn thành chúng. Và khi quá tải thông tin thì dẫn đến căng thẳng, choáng ngợp.]]></description>
+</item><item>
+    <title>Zettelkasten method</title>
+    <link>https://hukacode.github.io/note/20210318081058/</link>
+    <pubDate>Mon, 12 Apr 2021 20:53:02 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://hukacode.github.io/note/20210318081058/</guid>
+    <description><![CDATA[ Đọc. Highlight. Trích xuất highlight rồi viết ghi chú.  References  https://leananki.com/zettelkasten-method-smart-notes/ https://blog.viktomas.com/posts/slip-box/ https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125  ]]></description>
+</item><item>
+    <title>🌱 Digital Garden</title>
+    <link>https://hukacode.github.io/note/20210315150839/</link>
+    <pubDate>Mon, 12 Apr 2021 20:53:02 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://hukacode.github.io/note/20210315150839/</guid>
+    <description><![CDATA[https://maggieappleton.com/garden-history
+References  https://joelhooks.com/digital-garden https://scottspence.com/garden https://anthonymorris.dev https://www.mentalnodes.com/about https://notes.andymatuschak.org/ https://til.yenly.wtf/ https://wiki.nikitavoloboev.xyz/ https://github.com/MaggieAppleton/digital-gardeners https://blog.charlietrochlil.com/  ]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>programming - Tag - Huka&#39;s Garden</title>
+        <link>https://hukacode.github.io/tags/programming/</link>
+        <description>programming - Tag - Huka&#39;s Garden</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mr.kharhums@gmail.com (Huka)</managingEditor>
+            <webMaster>mr.kharhums@gmail.com (Huka)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Jun 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://hukacode.github.io/tags/programming/" rel="self" type="application/rss+xml" /><item>
+    <title>Java roadmap</title>
+    <link>https://hukacode.github.io/note/java-roadmap/</link>
+    <pubDate>Mon, 21 Jun 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://hukacode.github.io/note/java-roadmap/</guid>
+    <description><![CDATA[ <a title="" class="wikilink" href="/note/java|Java]] <a title="" class="wikilink" href="/note/20210322101053|SOLID">20210322101053|SOLID</a> <a title="" class="wikilink" href="/note/maven|Maven">maven|Maven</a> <a title="" class="wikilink" href="/note/gradle|Gradle">gradle|Gradle</a> <a title="" class="wikilink" href="/note/basic-sql|Basic-SQL">basic-sql|Basic-SQL</a> <a title="" class="wikilink" href="/note/20210405161340|API">20210405161340|API</a> <a title="" class="wikilink" href="/note/git|Git">git|Git</a> HTTP/HTTPS <a title="" class="wikilink" href="/note/20210531115001|Data structure and Algorithms">20210531115001|Data structure and Algorithms</a> <a title="" class="wikilink" href="/note/spring-framework|Spring">spring-framework|Spring</a> <a title="" class="wikilink" href="/note/20210621155219|Hibernate">20210621155219|Hibernate</a> <a title="" class="wikilink" href="/note/20210405160744|PostgreSQL">20210405160744|PostgreSQL</a> <a title="" class="wikilink" href="/note/20210405161200|Redis">20210405161200|Redis</a> <a title="" class="wikilink" href="/note/20210621155005|ElasticSearch">20210621155005|ElasticSearch</a> <a title="" class="wikilink" href="/note/20210621155054|MongoDB">20210621155054|MongoDB</a> <a title="" class="wikilink" href="/note/20210621155139|Redis">20210621155139|Redis</a> <a title="" class="wikilink" href="/note/20210621155249|Caffeine">20210621155249|Caffeine</a> jEdis <a title="" class="wikilink" href="/note/elk|ELK">elk|ELK</a> logback atmosphere <a title="" class="wikilink" href="/note/rest|REST">rest|REST</a> <a title="" class="wikilink" href="/note/graphql|GraphQL">graphql|GraphQL</a> okhttp Mockito JUnit cucumber-jvm rest-assured RabbitMQ <a title="" class="wikilink" href="/note/kafka|Apache Kafka">kafka|Apache Kafka</a> <a title="" class="wikilink" href="/note/gRPC|gRPC">gRPC|gRPC</a> <a title="" class="wikilink" href="/note/protocol-buffer|Protocol Buffers">protocol-buffer|Protocol Buffers</a> micronaut thrift [[design-pattern">Design Patterns</a>  Reference  https://github.com/s4kibs4mi/java-developer-roadmap  ]]></description>
+</item><item>
+    <title>Angular</title>
+    <link>https://hukacode.github.io/note/angular/</link>
+    <pubDate>Thu, 20 May 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://hukacode.github.io/note/angular/</guid>
+    <description><![CDATA[ <a title="" class="wikilink" href="/note/20210405161236">Cheat sheet</a> https://angular.io/cli https://material.angular.io/guide/getting-started https://teradata.github.io/covalent/v3/#/docs/get-started/overview  ]]></description>
+</item><item>
+    <title>GraphQL</title>
+    <link>https://hukacode.github.io/note/graphql/</link>
+    <pubDate>Mon, 12 Apr 2021 20:53:02 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://hukacode.github.io/note/graphql/</guid>
+    <description><![CDATA[What is GraphQL? GraphQL là một specification của một query language cho APIs.
+Thường được nhắc đến như là một declarative data-fetching language. Có nghĩa là client hoặc API consumer sẽ gửi một request trong một query language chứa những fields mà nó yêu cầu thay vì toàn bộ payload.
+Chỉ có một endpoint để mà consumer gửi những queries khác nhau dựa trên data of interest.
+ <a title="" class="wikilink" href="/note/graph-theory|Graph Theory]] [[rest">REST</a>  Key note  JSON datatype.]]></description>
+</item></channel>
+</rss>

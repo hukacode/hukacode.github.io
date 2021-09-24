@@ -1,23 +1,2 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>rule - Tag - Huka&#39;s Garden</title>
-        <link>https://hukacode.github.io/tags/rule/</link>
-        <description>rule - Tag - Huka&#39;s Garden</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mr.kharhums@gmail.com (Huka)</managingEditor>
-            <webMaster>mr.kharhums@gmail.com (Huka)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 May 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://hukacode.github.io/tags/rule/" rel="self" type="application/rss+xml" /><item>
-    <title>Cách hỏi</title>
-    <link>https://hukacode.github.io/note/20210513114054/</link>
-    <pubDate>Thu, 13 May 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://hukacode.github.io/note/20210513114054/</guid>
-    <description><![CDATA[Trang How To Ask Questions The Smart Way chứa hết những gì cần biết khi đặt câu hỏi. Tóm gọn thì:
- Tự tìm hiểu trước. Ghi rõ những cách mình đã thử và phỏng đoán. Ghi rõ cái mà mình muốn đạt được. Cung cấp nhiều thông tin nhất có thể. Tôn trọng thời gian và công sức của người khác.    Khi hỏi thì trung thực, rõ ràng và ngắn gọn, đi thẳng vào trọng tâm, tránh XY problem.]]></description>
-</item><item>
-    <title>Một vài quy tắt cho bản thân</title>
-    <link>https://hukacode.github.io/note/rule/</link>
-    <pubDate>Thu, 13 May 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://hukacode.github.io/note/rule/</guid>
-    <description><![CDATA[☘️ Cuộc sống  Không nên lãng phí thời gian. Đặt ra mục tiêu, lên kế hoạch. Mạnh dạn, chủ động, cởi mở. Không sợ hãi, không từ bỏ, không than vãn. Đừng so sánh bản thân với người khác. Không phán xét người khác. Thử đặt mình vào vị trí của họ. Hãy tử tế và thân thiện. Không lừa bản thân hay người khác.  💪 Sức khỏe  Dậy sớm.]]></description>
-</item></channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>rule - Tag - Huka's Garden</title><link>https://hukacode.github.io/tags/rule/</link><description>rule - Tag - Huka's Garden</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mr.kharhums@gmail.com (Huka)</managingEditor><webMaster>mr.kharhums@gmail.com (Huka)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hukacode.github.io/tags/rule/" rel="self" type="application/rss+xml"/><item><title>Cách hỏi</title><link>https://hukacode.github.io/note/20210513114054/</link><pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate><author>Author</author><guid>https://hukacode.github.io/note/20210513114054/</guid><description>Trang How To Ask Questions The Smart Way chứa hết những gì cần biết khi đặt câu hỏi. Tóm gọn thì:
+Tự tìm hiểu trước. Ghi rõ những cách mình đã thử và phỏng đoán. Ghi rõ cái mà mình muốn đạt được. Cung cấp nhiều thông tin nhất có thể. Tôn trọng thời gian và công sức của người khác. Khi hỏi thì trung thực, rõ ràng và ngắn gọn, đi thẳng vào trọng tâm, tránh XY problem.</description></item><item><title>Một vài quy tắt cho bản thân</title><link>https://hukacode.github.io/note/rule/</link><pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate><author>Author</author><guid>https://hukacode.github.io/note/rule/</guid><description>☘️ Cuộc sống Không nên lãng phí thời gian. Đặt ra mục tiêu, lên kế hoạch. Mạnh dạn, chủ động, cởi mở. Không sợ hãi, không từ bỏ, không than vãn. Đừng so sánh bản thân với người khác. Không phán xét người khác. Thử đặt mình vào vị trí của họ. Hãy tử tế và thân thiện. Không lừa bản thân hay người khác. 💪 Sức khỏe Dậy sớm.</description></item></channel></rss>

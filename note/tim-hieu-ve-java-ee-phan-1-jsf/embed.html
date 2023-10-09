@@ -1,0 +1,81 @@
+<!doctype html><html lang=en><head><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hukacode.github.io/note/tim-hieu-ve-java-ee-phan-1-jsf/><link rel=next href=https://hukacode.github.io/note/movie/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><style>body{overflow:hidden}h1{font-size:20px}h2{font-size:16px}h3{font-size:14px}.page{border:none;overflow:hidden;padding:0;height:100%;padding:10px;border-radius:0;height:100%}a{user-select:none;pointer-events:none}.single .content h2,.single .content h3,.single .content h4,.single .content h5,.single .content h6{font-weight:700;margin:0}</style></head><body class=tc-body><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/note/tim-hieu-ve-java-ee-phan-1-jsf/>Tìm hiểu về Java EE 7 – Phần 1 (JSF)</a></h1><div class=content><h3 id=java-ee>Java EE</h3><p>Java EE hay còn được viết là J2EE là viết tắt của từ Java Enterprise Edition. Nó là một bộ chuẩn các công nghệ dành cho việc phát triển Java phía server (server-side). Những công nghệ đó bao gồm JavaServer Faces (JSF), Enterprise JavaBeans (EJBs),<br>Java Messaging Service (JMS), Java Persistence API (JPA), Java API for<br>WebSocket, Contexts and Dependency Injection (CDI), Java API for XML Web<br>Services (JAX-WS), Java API for RESTful Web Services (JAX-RS) và Java<br>API for JSON Processing (JSON-P),&mldr;</p><p>Ở phần một này chúng ta cùng tìm hiểu JavaServer Faces (JSF) là gì nào?</p><ul><li>JSF là một Java framework được chuẩn hóa dành cho web UIs dựa trên MVC pattern.</li><li>JSP là một tiêu chuẩn dành cho việc tạo ra trang web từ mẫu (template).</li><li>Facelets là sự thay thế của JSP trong tầng View dựa trên mẫu XML thuần (không có scriptlet). Chúng chỉ có thể được dùng trong ứng dụng JSF.</li></ul><p>Để thuận tiện cho việc theo dõi và thực hành các bạn dùng công nghệ/công cụ như mình sử dụng nhé:</p><ul><li>Eclipse</li><li>Maven</li><li>GlassFish</li><li>JSF 2.2</li></ul><h3 id=facelets>Facelets</h3><p>Facelets là một phần đặc tả kĩ thuật (specification) của JSF và cũng là presentation technology ưa thích để xây dựng ứng dụng JSF.</p><p>Tính năng của Facelets bao gồm:</p><ul><li>Dùng XHTML để tạo web page.</li><li>Hỗ trợ thự viện Facelets tag ngoài JSF, JSTL tag.</li><li>Hỗ trợ EL.</li><li>Tạo khuôn mẫu (template) cho các components và pages.</li></ul><p>Lợi thế của Facelets cho project phát triển quy mô lớn gồm:</p><ul><li>Hỗ trợ cho tái sử dụng code thông qua các template và composite components</li><li>Thời gian biên dịch nhanh</li><li>Compile-time EL validation</li><li>Render hiệu năng cao.</li></ul><p>Nói ngắn gọn, dùng Facelets sẽ giảm thời gian và công sức cần thiết để mà develop và deploy.<br>Các phiên bản trước JSF dùng JSP để làm tầng view mặc định và ở JSF 2 thì đã thay thế bằng Facelets.</p><h4 id=so-sánh-jsp-và-facelets>So sánh JSP và Facelets</h4><p><strong>JSP Compile-Time Overhead</strong></p><p>Mỗi lần bạn chỉnh sửa, lưu lại và load lại trang JSP, bộ biên dịch JSP của server sinh ra file Java servlet và biên dịch nó thành một servlet. Quá trình này được gọi là biên dịch JSP và thông thường nó tốn khoảng 1-2 giây tùy thuộc vào hiệu năng của server.</p><p><strong>Facelets XML Compilation</strong></p><p>Không giống như JSP, Facelets không biên dịch thành servlet. Vì Facelets tuân thủ cú pháp XML (XML-compliant), Facelets framework dùng một SAX-based compiler để xây dựng view. Mặc khác, Facelets có thể được cấu hình để phát hiện và render thay đổi nội dung ngay lập tức.</p><p>Các bạn hãy xem ví dụ đơn giản sau về cú pháp của Facelets:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=cp>&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39; ?&gt;</span>
+</span></span><span class=line><span class=cl><span class=cp>&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34;
+</span></span></span><span class=line><span class=cl><span class=cp>&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span> <span class=na>xmlns</span><span class=o>=</span><span class=s>&#34;http://www.w3.org/1999/xhtml&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=na>xmlns:h</span><span class=o>=</span><span class=s>&#34;http://java.sun.com/jsf/html&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=na>xmlns:f</span><span class=o>=</span><span class=s>&#34;http://java.sun.com/jsf/core&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>h:head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>title</span><span class=p>&gt;</span>The notebook<span class=p>&lt;/</span><span class=nt>title</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>h:head</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>h:body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>h:outputStylesheet</span> <span class=na>library</span><span class=o>=</span><span class=s>&#34;css&#34;</span> <span class=na>name</span><span class=o>=</span><span class=s>&#34;styles.css&#34;</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>h:form</span> <span class=na>id</span><span class=o>=</span><span class=s>&#34;userForm&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>h:messages</span><span class=p>&gt;&lt;/</span><span class=nt>h:messages</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>h:panelGrid</span> <span class=na>columns</span><span class=o>=</span><span class=s>&#34;2&#34;</span> <span class=na>columnClasses</span><span class=o>=</span><span class=s>&#34;rightAlign,leftAlign&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:outputLabel</span> <span class=na>for</span><span class=o>=</span><span class=s>&#34;firstName&#34;</span> <span class=na>value</span><span class=o>=</span><span class=s>&#34;First Name:&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;/</span><span class=nt>h:outputLabel</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:inputText</span> <span class=na>id</span><span class=o>=</span><span class=s>&#34;firstName&#34;</span> <span class=na>label</span><span class=o>=</span><span class=s>&#34;First Name&#34;</span>
+</span></span><span class=line><span class=cl>                <span class=na>value</span><span class=o>=</span><span class=s>&#34;#{user.firstName}&#34;</span> <span class=na>required</span><span class=o>=</span><span class=s>&#34;true&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=p>&lt;</span><span class=nt>f:validateLength</span> <span class=na>minimum</span><span class=o>=</span><span class=s>&#34;2&#34;</span> <span class=na>maximum</span><span class=o>=</span><span class=s>&#34;30&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=p>&lt;/</span><span class=nt>f:validateLength</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;/</span><span class=nt>h:inputText</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:outputLabel</span> <span class=na>for</span><span class=o>=</span><span class=s>&#34;lastName&#34;</span> <span class=na>value</span><span class=o>=</span><span class=s>&#34;Last Name:&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;/</span><span class=nt>h:outputLabel</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:inputText</span> <span class=na>id</span><span class=o>=</span><span class=s>&#34;lastName&#34;</span> <span class=na>label</span><span class=o>=</span><span class=s>&#34;Last Name&#34;</span>
+</span></span><span class=line><span class=cl>                <span class=na>value</span><span class=o>=</span><span class=s>&#34;#{user.lastName}&#34;</span> <span class=na>required</span><span class=o>=</span><span class=s>&#34;true&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=p>&lt;</span><span class=nt>f:validateLength</span> <span class=na>minimum</span><span class=o>=</span><span class=s>&#34;2&#34;</span> <span class=na>maximum</span><span class=o>=</span><span class=s>&#34;30&#34;</span><span class=p>&gt;</span> <span class=p>&lt;/</span><span class=nt>f:validateLength</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;/</span><span class=nt>h:inputText</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:outputLabel</span> <span class=na>for</span><span class=o>=</span><span class=s>&#34;email&#34;</span> <span class=na>value</span><span class=o>=</span><span class=s>&#34;Email:&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;/</span><span class=nt>h:outputLabel</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:inputText</span> <span class=na>id</span><span class=o>=</span><span class=s>&#34;email&#34;</span> <span class=na>label</span><span class=o>=</span><span class=s>&#34;Email&#34;</span> <span class=na>value</span><span class=o>=</span><span class=s>&#34;#{user.email}&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=p>&lt;</span><span class=nt>f:validateLength</span> <span class=na>minimum</span><span class=o>=</span><span class=s>&#34;3&#34;</span> <span class=na>maximum</span><span class=o>=</span><span class=s>&#34;30&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=p>&lt;/</span><span class=nt>f:validateLength</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;/</span><span class=nt>h:inputText</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:panelGroup</span><span class=p>&gt;&lt;/</span><span class=nt>h:panelGroup</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;</span><span class=nt>h:commandButton</span> <span class=na>action</span><span class=o>=</span><span class=s>&#34;confirmation&#34;</span> <span class=na>value</span><span class=o>=</span><span class=s>&#34;Save&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=p>&lt;/</span><span class=nt>h:commandButton</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;/</span><span class=nt>h:panelGrid</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;/</span><span class=nt>h:form</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>h:body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>Bài này mình xin dừng lại tại đây, hẹn gặp các bạn ở bài sau về Java Persistence API (JPA)</p></div></article><script></script></body></html>

@@ -1,0 +1,1 @@
+import{_ as s}from"./PostDetails.astro_astro_type_script_index_0_lang.DQbNMcth.js";import{s as o}from"./isObject.DakTDBFS.js";var d=s(((t,s)=>{let e;return"sandbox"===s&&(e=o("#i"+t)),o("sandbox"===s?e.nodes()[0].contentDocument.body:"body").select(`[id="${t}"]`)}),"getDiagramElement");export{d as g};

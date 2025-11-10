@@ -1,0 +1,1 @@
+import{ao as r,ap as n}from"./PostDetails.astro_astro_type_script_index_0_lang.DQbNMcth.js";const t=(t,a)=>r.lang.round(n.parse(t)[a]);export{t as c};

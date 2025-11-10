@@ -1,0 +1,1 @@
+import{i as b,b as s}from"./isObject.DakTDBFS.js";var t="[object Symbol]";function e(o){return"symbol"==typeof o||b(o)&&s(o)==t}export{e as i};

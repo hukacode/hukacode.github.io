@@ -1,0 +1,1 @@
+function c(r){for(var e=r.length/6|0,n=new Array(e),c=0;c<e;)n[c]="#"+r.slice(6*c,6*++c);return n}export{c};
